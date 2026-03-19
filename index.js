@@ -10,6 +10,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use("/", todoRouter);
 
-const port = process.env.BACKEND_PORT;
+const port = process.env.PORT;
 
 app.listen(port);
